@@ -34,13 +34,12 @@
       "default": false,
       "required": true
     },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "description": {
       "type": "text",
+      "required": true
+    },
+    "user": {
+      "type": "json",
       "required": true
     }
   }
