@@ -41,6 +41,12 @@
     "user": {
       "type": "json",
       "required": true
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "todo"
     }
   }
 }
